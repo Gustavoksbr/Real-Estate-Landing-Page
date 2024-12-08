@@ -236,7 +236,7 @@ nav {
   box-shadow: 0 0 5px var(--purple);
   transform: scale(1.01);
 }
-.recently-added {
+.recently-added , .depoimentos-avaliacoes-section{
   margin: 4em 0 0;
   padding: 0 2em;
 }
@@ -244,7 +244,7 @@ nav {
   text-align: center;
   overflow: hidden;
 }
-.recently-head {
+.recently-head, .depoimentos-avaliacoes-head  {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -263,7 +263,7 @@ nav {
   color: var(--blue);
   font-weight: 600;
 }
-.recently-items {
+.recently-items , .lista-depoimentos{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -271,7 +271,7 @@ nav {
   margin: 1.5em auto 0;
   gap: 1em;
 }
-.recently-items .recently-item {
+.recently-items .recently-item , .item-depoimento{
   border: 1px solid var(--gray);
   border-radius: 25px;
   display: flex;
@@ -336,7 +336,7 @@ nav {
 .recently-items .recently-item-hidden {
   display: none;
 }
-.recently-items .recently-item:hover {
+.recently-items .recently-item:hover, .item-depoimento:hover {
   box-shadow: 0 0 30px var(--gray);
   border: 1px solid var(--blue);
   transform: scale(1.01);
@@ -510,7 +510,7 @@ footer .footer-content .footer-links .footer-subscribe:hover {
   .find-content {
     font-size: 0.7rem;
   }
-  .recently-head {
+  .recently-head, .depoimentos-avaliacoes-head {
     max-width: 32em;
   }
 }
@@ -584,7 +584,7 @@ footer .footer-content .footer-links .footer-subscribe:hover {
     font-size: 1rem;
   }
   .country,
-  .recently-item {
+  .recently-item{
     font-size: 0.9rem;
   }
 }
@@ -655,9 +655,51 @@ footer .footer-content .footer-links .footer-subscribe:hover {
   .footer-content,
   .hero-content,
   .navbar,
-  .recently-added-content {
+  .recently-added-content, .depoimentos-avaliacoes-content {
     max-width: 1600px;
     margin-left: auto !important;
     margin-right: auto !important;
+  }
+}
+
+/*personalizados*/
+
+.depoimentos-avaliacoes-section h2 {
+  font-size: 1.4em;
+  margin-bottom: 8px;
+}
+
+.img-nome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center ;
+}
+
+
+.img-nome-container img {
+  padding-left: 20%;
+  padding-top: 20%;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-right: 20%;
+}
+
+.item-depoimento{
+  width: 40%;
+}
+
+.texto-depoimento-container {
+  width: 60%;
+}
+
+.avaliacao{
+  width: 30px;
+}
+
+@media (max-width: 600px) {
+  .item-depoimento {
+    display: flex;
+    flex-direction: column;
   }
 }
